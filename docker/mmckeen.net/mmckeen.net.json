@@ -8,6 +8,13 @@
   ],
   "provisioners": [
     {
+      "type": "shell",
+      "inline": [
+                  "zypper -n in nginx",
+                  "echo 'daemon off;' >> /etc/nginx/nginx.conf"
+                ]
+    },
+    {
       "type": "file",
       "source": "/srv/www/mmckeen.net/",
       "destination": "/srv/www/htdocs/"      
