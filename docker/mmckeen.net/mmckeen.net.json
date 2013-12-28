@@ -1,0 +1,16 @@
+{
+  "builders": [
+    {
+      "type": "docker",
+      "image": "mmckeen/opensuse-13-1",
+      "export_path": "mmckeen.net.tar"
+    }
+  ],
+  "provisioners": [
+    {
+      "type": "file",
+      "source": "/srv/www/mmckeen.net/",
+      "destination": "/srv/www/htdocs/"      
+    }
+  ]
+}
