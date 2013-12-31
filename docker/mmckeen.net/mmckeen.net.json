@@ -10,6 +10,8 @@
     {
       "type": "shell",
       "inline": [
+                  "zypper -n ref",
+                  "zypper -n up",
                   "zypper -n in nginx",
                   "echo 'daemon off;' >> /etc/nginx/nginx.conf"
                 ]
