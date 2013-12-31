@@ -1,0 +1,15 @@
+# This is an example Vagrantfile to test mmckeen.net with Vagrant and VirtualBox
+
+Vagrant.configure("2") do |config|
+
+  # Set a sane hostname
+  config.vm.hostname = "mmckeen-net"
+
+  # Start nginx
+  config.vm.provision "shell",
+    inline: "systemctl start nginx"
+
+  # Forward port 80 to host port 8080
+  config.vm.network "forwarded_port", guest: 80, host: 8080
+
+end
