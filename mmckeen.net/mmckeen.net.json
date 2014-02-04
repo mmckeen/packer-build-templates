@@ -47,7 +47,7 @@
     },
     {
       "type": "file",
-      "source": "/srv/www/mmckeen.net/",
+      "source": "www",
       "destination": "/srv/www/htdocs/"      
     }
   ],
