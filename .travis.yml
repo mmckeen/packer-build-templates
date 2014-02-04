@@ -4,8 +4,8 @@ rvm:
 install:
   - bundle install
   - curl -L -o packer.zip https://dl.bintray.com/mitchellh/packer/0.5.1_linux_amd64.zip && unzip -d bin packer.zip
-  - ./mmckeen.net/dependencies.sh
-  - mkdir -p mmckeen.net/www
+  - touch ./mmckeen.net/openSUSE_13.1_Packer_Base-1.0.0/openSUSE_13.1_Packer_Base.x86_64-1.0.0.ovf 
+  - mkdir -p ./mmckeen.net/www
 script:
   - PATH=$(pwd)/bin:$PATH bundle exec rake
 
