@@ -47,7 +47,7 @@
     },
     {
       "type": "file",
-      "source": "./www",
+      "source": "./www/",
       "destination": "/srv/www/htdocs/"      
     }
   ],
