@@ -2,7 +2,7 @@
   "builders": [
     {
       "type": "docker",
-      "image": "mmckeen/opensuse-13-1",
+      "image": "mmckeen/nginx",
       "export_path": "mmckeen.net.tar"
     },
     {
@@ -24,13 +24,6 @@
                   "zypper -n ref",
                   "zypper -n up",
                   "zypper -n in nginx"
-                ]
-    },
-    {
-      "type": "shell",
-      "only": ["docker"],
-      "inline": [
-                  "echo 'daemon off;' >> /etc/nginx/nginx.conf"
                 ]
     },
     {
