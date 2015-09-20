@@ -5,7 +5,7 @@ install:
   - bundle install
   - curl -L -o packer.zip https://dl.bintray.com/mitchellh/packer/packer_0.8.6_linux_amd64.zip && unzip -d bin packer.zip
   - mkdir -p Matthews_openSUSE_Tumbleweed_JeOS-0.0.2 
-  - touch Matthews_openSUSE_Tumbleweed_JeOS-0.0.2/Matthews_openSUSE_Tumbleweed_JeOS-0.0.2.ovf
+  - touch Matthews_openSUSE_Tumbleweed_JeOS-0.0.2/Matthews_openSUSE_Tumbleweed_JeOS.x86_64-0.0.2.ovf
   - mkdir www
 script:
   - PATH=$(pwd)/bin:$PATH bundle exec rake
