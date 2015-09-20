@@ -9,4 +9,4 @@ install:
   - mkdir www
 script:
   - PATH=$(pwd)/bin:$PATH bundle exec rake
-
+sudo: false
