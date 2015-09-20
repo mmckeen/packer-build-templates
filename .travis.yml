@@ -1,11 +1,11 @@
-lauguage: ruby
+language: ruby
 rvm:
   - 2.1.0
 install:
   - bundle install
-  - curl -L -o packer.zip https://dl.bintray.com/mitchellh/packer/0.5.1_linux_amd64.zip && unzip -d bin packer.zip
-  - mkdir -p openSUSE_13.1_Packer_Base-1.0.0
-  - touch openSUSE_13.1_Packer_Base-1.0.0/openSUSE_13.1_Packer_Base.x86_64-1.0.0.ovf 
+  - curl -L -o packer.zip https://dl.bintray.com/mitchellh/packer/packer_0.8.6_linux_amd64.zip && unzip -d bin packer.zip
+  - mkdir -p Matthews_openSUSE_Tumbleweed_JeOS-0.0.2 
+  - touch Matthews_openSUSE_Tumbleweed_JeOS-0.0.2/Matthews_openSUSE_Tumbleweed_JeOS-0.0.2.ovf
   - mkdir www
 script:
   - PATH=$(pwd)/bin:$PATH bundle exec rake
