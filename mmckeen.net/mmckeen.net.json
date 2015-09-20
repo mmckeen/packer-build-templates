@@ -28,13 +28,6 @@
     },
     {
       "type": "shell",
-      "only": ["docker"],
-      "inline": [
-                  "echo 'daemon off;' >> /etc/nginx/nginx.conf"
-                ]
-    },
-    {
-      "type": "shell",
       "only": ["virtualbox-ovf"],
       "inline": [
                   "useradd vagrant",
@@ -47,7 +40,7 @@
     },
     {
       "type": "file",
-      "source": "./www",
+      "source": "./www/",
       "destination": "/srv/www/htdocs/"      
     }
   ],
