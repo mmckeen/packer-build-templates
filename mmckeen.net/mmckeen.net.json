@@ -2,7 +2,7 @@
   "builders": [
     {
       "type": "docker",
-      "image": "opensuse:tumbleweed",
+      "image": "mmckeen/nginx",
       "export_path": "mmckeen.net.tar"
     },
     {
